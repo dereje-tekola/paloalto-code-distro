@@ -16,6 +16,7 @@ import ast
 # API account password = PASSWORD = "************"
 # For the https cert validation, add/append the Root/Intermediate(s) of the site into the location
 # .../lib/python3.9/site-packages/certifi/cacert.pem
+#
 
 PASSWORD = getpass.getpass()
 # url for each device that the key is generated
@@ -27,7 +28,6 @@ url = "https://<URL>"
 url_plus_parameters = url+"/api/?type=keygen&user=devops&password="+PASSWORD
 response = requests.get(url_plus_parameters, verify=True)
 print()
-print(response)
 
 APIKEY = response.text.split("<key>")[1].split("</key>")[0]
 
