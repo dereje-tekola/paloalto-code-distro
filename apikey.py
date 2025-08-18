@@ -20,6 +20,7 @@ import ast
 PASSWORD = getpass.getpass()
 # url for each device that the key is generated
 url = "https://<URL>"
+# Replace URL with the IP or FQDN of the device
 
 # refer RestAPI documentation https://<url>/restapi-doc
 
