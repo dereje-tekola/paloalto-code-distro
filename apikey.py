@@ -1,6 +1,7 @@
 # Author: Tekola
 # Date: March 19, 2024
-# Version: 1
+# Updated: August 18, 2025
+# Version: 2
 
 import sys
 import json
